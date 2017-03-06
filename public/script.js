@@ -241,16 +241,17 @@ $(document).ready(function() {
 
       var genreTemplate = function(data) {
         return '<h2>'+data.name+'</h2>'+
-        '<p> Published <small>'+data.create_date+'</small></p>';
+        '<p> created <small>'+data.create_date+'</small></p>';
       }
       var bookTemplate = function(data) {
-        return '<h2>'+data.title+'</h2>'+
+        return '<div class="book"><h2>'+data.title+'</h2>'+
         '<h4> By '+data.author+'</h4>'+
-        '<p> Published by '+data.publisher+' <small>'+data.create_date+'</small></p>'+
+        '<div class="image-book"><a href='+data.buy_url+' target="_blank"><img src='+data.image_url+' /></a></div>'+
+        '<div class="description-book"><p> Published by '+data.publisher+'</p>'+
         '<p>'+data.description+'</p>'+
         '<small><i>Genre '+data.genre+'</i></small><br/>'+
-        '<small><i>Grab on <a href="#">'+data.buy_url+'</a></i></small><br/>'+
-        '<small><i>Media <a href="#">'+data.image_url+'</a></i></small>';
+        '<small><i>Grab on <a href='+data.buy_url+' target="_blank">'+data.buy_url+'</a></i></small><br/>'+
+        '<small><i>Media <a href='+data.image_url+' target="_blank">'+data.image_url+'</a></i></small></div></div>';
       }
       if (!AJAX.required_both) {
         switch (AJAX.type) {

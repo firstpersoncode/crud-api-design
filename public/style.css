@@ -43,6 +43,32 @@ textarea {
   margin-bottom: 10px;
 }
 
+.book {
+  margin: 10px 0;
+  background: #fff7d8;
+  padding: 10px;
+}
+
+.book:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.image-book {
+  float: left;
+  width: 35%;
+}
+
+/*.image-book img {
+  width: 100%;
+}*/
+
+.descripton-book {
+  float: left;
+  width: 65%;
+}
+
 #result {
   display: none;
   background: #eee;
