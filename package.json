@@ -1,0 +1,19 @@
+{
+  "name": "crud-api-design",
+  "version": "1.0.0",
+  "description": "Simple Crud api design",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "body-parser": "*",
+    "cors": "^2.8.1",
+    "express": "*",
+    "mongoose": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}

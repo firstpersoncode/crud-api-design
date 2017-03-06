@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookstore</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="bookForm">
+
+      <label>
+        <input type="radio" name="action" class="list" value="list" checked="checked" /> list books & genres
+      </label>
+
+      <label>
+        <input type="radio" name="action" class="search" value="search" /> search books
+      </label>
+
+
+      <label>
+        <input type="radio" name="action" class="create" value="create" /> add book + genre
+      </label>
+
+
+      <label>
+        <input type="radio" name="action" class="update" value="update" /> edit book / genre
+      </label>
+
+
+      <label>
+        <input type="radio" name="action" class="delete" value="delete" /> delete book / genre
+      </label>
+      </br>
+      </br>
+
+      <div>
+        <label for="book_id">
+          ID BOOK: <input type="text" name="book_id" class="book_id" />
+        </label>
+      </div>
+      <div>
+        <label for="genre_id">
+          ID GENRE: <input type="text" name="genre_id" class="genre_id" />
+        </label>
+      </div>
+
+      <div>
+        <label for="title">
+          TITLE: <input type="text" name="title" class="title" />
+        </label>
+      </div>
+
+      <div>
+        <label for="genre">
+          GENRE: <input type="text" name="genre" class="genre" />
+        </label>
+      </div>
+
+      <div>
+        <label for="description">
+          DESCRIPTION: <textarea name="description" class="description"></textarea>
+        </label>
+      </div>
+
+      <div>
+        <label for="author">
+          AUTHOR: <input type="text" name="author" class="author" />
+        </label>
+      </div>
+
+      <div>
+        <label for="publisher">
+          PUBLISHER: <input type="text" name="publisher" class="publisher" />
+        </label>
+      </div>
+
+      <div>
+        <label for="PAGES">
+          PAGES: <input type="number" name="pages" class="pages" />
+        </label>
+      </div>
+
+      <div>
+        <label for="image_url">
+          IMAGE URL: <input type="url" name="image_url" class="image_url" />
+        </label>
+      </div>
+
+      <div>
+        <label for="buy_url">
+          BUY URL: <input type="url" name="buy_url" class="buy_url" />
+        </label>
+      </div>
+
+      <input type="submit" />
+    </form>
+    <div id="result"></div>
+    <button id="show-detail">detail</button>
+    <pre id="detail"></pre>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
