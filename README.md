@@ -1,2 +1,2 @@
 # Basic CRUD API Design
-Sample bookstore database with jQuery, express.js & mongodDB
+Sample bookstore app with jQuery, express.js & mongodDB
